@@ -43,6 +43,7 @@ const TODAYS_GIFT_LIST: Prize[] = [
   { id: '13', name: '海苔薄燒 (1份)', totalQuantity: 1, punchedQuantity: 0 },
   { id: '14', name: '海苔煎餅 (1份)', totalQuantity: 1, punchedQuantity: 0 },
   { id: '15', name: '義美小泡芙 (藍莓夾香風味)', totalQuantity: 1, punchedQuantity: 0 },
+  { id: '16', name: 'UNI FIT運動飲料', totalQuantity: 7, punchedQuantity: 0 },
 ];
 
 function App() {
