@@ -109,7 +109,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
                 borderRadius: '30px'
               }}
             >
-              📥 一鍵載入今日 93 份預設禮品清單
+              📥 一鍵載入今日 100 份預設禮品清單
             </button>
           </div>
 

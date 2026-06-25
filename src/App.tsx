@@ -209,7 +209,7 @@ function App() {
   const handleLoadTodaysGifts = () => {
     if (prizePool.length > 0) {
       const confirmLoad = window.confirm(
-        '確定要載入今天預設的 93 份獎品清單嗎？這將會覆蓋您目前在後台設定的獎品（已戳出得獎紀錄將會被重設）。'
+        '確定要載入今天預設的 100 份獎品清單嗎？這將會覆蓋您目前在後台設定的獎品（已戳出得獎紀錄將會被重設）。'
       );
       if (!confirmLoad) return;
     }
@@ -218,7 +218,7 @@ function App() {
     setHistoryLog([]);
     setCurrentRound(1);
     setIsConfigured(false);
-    alert('已成功載入 93 份預設獎品！請點選下方儲存並開始遊戲。');
+    alert('已成功載入 100 份預設獎品！請點選下方儲存並開始遊戲。');
   };
 
   const handleResetAllGame = () => {
