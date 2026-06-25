@@ -603,6 +603,7 @@ body {
     var(--shadow-lg);
   padding: 16px;
   margin: 0 auto 20px;
+  width: 100%;
   max-width: min(100%, 58vh);
   position: relative;
 }
