@@ -604,7 +604,7 @@ body {
   padding: 16px;
   margin: 0 auto 20px;
   width: 100%;
-  max-width: min(100%, 58vh);
+  max-width: 960px;
   position: relative;
 }
 
@@ -652,6 +652,7 @@ body {
 .hole-wrapper {
   aspect-ratio: 1 / 1;
   position: relative;
+  container-type: inline-size;
 }
 
 .hole-socket {
@@ -695,6 +696,7 @@ body {
 
 .hole-number {
   font-size: 24px;
+  font-size: 26cqw;
   font-weight: 800;
   color: var(--text-dark);
   line-height: 1;
@@ -702,9 +704,10 @@ body {
 
 .punch-text {
   font-size: 11px;
+  font-size: 11cqw;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.4);
-  margin-top: 1px;
+  margin-top: 2cqw;
 }
 
 /* Prize Card Inner */
@@ -736,12 +739,14 @@ body {
 
 .prize-icon {
   font-size: 20px;
-  margin-bottom: 2px;
+  font-size: 22cqw;
+  margin-bottom: 2cqw;
   line-height: 1;
 }
 
 .prize-name {
   font-size: 11px;
+  font-size: 11cqw;
   font-weight: 800;
   line-height: 1.2;
   word-break: break-all;
@@ -758,8 +763,9 @@ body {
   background: var(--text-dark);
   color: white;
   font-size: 9px;
+  font-size: 9cqw;
   font-weight: 800;
-  padding: 1px 6px;
+  padding: 1px 6cqw;
   border-radius: 10px;
 }
 
@@ -904,68 +910,5 @@ body {
 @keyframes cta-pop-in {
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
-}
-
-/* Height-based media query to fit 36 holes on shorter screens without scrolling */
-@media (max-height: 900px) {
-  .app-layout {
-    padding: 10px;
-  }
-  .main-content {
-    margin-top: 15px;
-  }
-  .card {
-    padding: 12px 18px;
-    margin-bottom: 12px;
-  }
-  .grid-outer-board {
-    border-width: 8px;
-    padding: 8px;
-    margin-bottom: 12px;
-    max-width: min(100%, 56vh);
-  }
-  .grid-corkboard {
-    padding: 10px;
-  }
-  .punch-grid {
-    gap: 8px;
-  }
-  .header-top {
-    margin-bottom: 8px;
-  }
-  .game-title {
-    font-size: 20px;
-  }
-  .round-badge {
-    padding: 4px 10px;
-    font-size: 14px;
-  }
-  .btn-admin-gear {
-    padding: 4px 8px;
-    font-size: 12px;
-  }
-  .progress-bar-bg {
-    height: 12px;
-  }
-  .helper-hint {
-    margin-top: 6px;
-    font-size: 12px;
-  }
-  .skip-round-row {
-    padding: 2px 0;
-  }
-  .hole-number {
-    font-size: 20px;
-  }
-  .punch-text {
-    font-size: 9px;
-  }
-  .prize-icon {
-    font-size: 16px;
-    margin-bottom: 0px;
-  }
-  .prize-name {
-    font-size: 10px;
-  }
 }
 
