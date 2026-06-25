@@ -602,7 +602,8 @@ body {
     inset 0 4px 8px rgba(0,0,0,0.5),
     var(--shadow-lg);
   padding: 16px;
-  margin-bottom: 24px;
+  margin: 0 auto 20px;
+  max-width: min(100%, 58vh);
   position: relative;
 }
 
@@ -903,3 +904,67 @@ body {
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
+
+/* Height-based media query to fit 36 holes on shorter screens without scrolling */
+@media (max-height: 900px) {
+  .app-layout {
+    padding: 10px;
+  }
+  .main-content {
+    margin-top: 15px;
+  }
+  .card {
+    padding: 12px 18px;
+    margin-bottom: 12px;
+  }
+  .grid-outer-board {
+    border-width: 8px;
+    padding: 8px;
+    margin-bottom: 12px;
+    max-width: min(100%, 56vh);
+  }
+  .grid-corkboard {
+    padding: 10px;
+  }
+  .punch-grid {
+    gap: 8px;
+  }
+  .header-top {
+    margin-bottom: 8px;
+  }
+  .game-title {
+    font-size: 20px;
+  }
+  .round-badge {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+  .btn-admin-gear {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .progress-bar-bg {
+    height: 12px;
+  }
+  .helper-hint {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .skip-round-row {
+    padding: 2px 0;
+  }
+  .hole-number {
+    font-size: 20px;
+  }
+  .punch-text {
+    font-size: 9px;
+  }
+  .prize-icon {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .prize-name {
+    font-size: 10px;
+  }
+}
+
